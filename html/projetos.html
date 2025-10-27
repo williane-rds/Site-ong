@@ -6,42 +6,100 @@
     <meta charset="UTF-8">
     <title>Site ONG</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
-    <h1>ONG Aumiigão</h1>
-<header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="Projetos.html">projetos</a></li>
-            <li><a href="cadastro.html">Cadastro</a></li>
-        </ul>
-    </nav>
-</header>
-<main>
-    <section>
-        <h2>Projetos da ONG Aumiigão</h2>
-        <p>A ONG Aumigão desenvolve diversos projetos para o bem-estar dos animais abandonados. Conheça alguns deles:
-        </p>
-        <ul>
-            <li><strong>Projeto de Resgate:</strong> Resgate de animais em situação de risco nas ruas.</li>
-            <li><strong>Projeto de Adoção:</strong> Facilitação do processo de adoção responsável.</li>
-            <li><strong>Projeto de Castração:</strong> Campanhas de castração para controle populacional.</li>
-            <li><strong>Projeto Educativo:</strong> Programas de conscientização sobre cuidados com os animais.</li>
-        </ul>
-        <img src="../img/projeto.jpg" alt="Imagem de projetos" width="300">
+
+    <header>
+        <nav>
+            <div class="logo">&#128062; Voluntários</div>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul id="navMenu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Projetos.html">projetos</a></li>
+                <li><a href="cadastro.html" class="active">Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Projetos</h2>
+            <p>A Aumiigão conecta pessoas que amam animais com causas que realmente fazem a diferença. Nosso site
+                funciona como uma ponte entre doadores, voluntários e protetores independentes. Aqui, você pode conhecer
+                histórias de animais resgatados, descobrir campanhas em andamento e contribuir com doações ou tempo
+                voluntário. Tudo é feito de forma transparente e segura, garantindo que cada ajuda chegue a quem mais
+                precisa — os nossos amigos de quatro patas.</p>
+        </div>
+    </section>
+    <section class="about">
+        <h2>Para que Serve</h2>
+        <p>O projeto Aumiigão foi criado para dar visibilidade aos animais abandonados e incentivar a adoção
+            responsável.
+            Além disso, servimos como um canal de apoio para arrecadar recursos, divulgar eventos de adoção e
+            promover ações educativas sobre cuidado e bem-estar animal. Nosso objetivo é unir pessoas e transformar
+            vidas — uma patinha de cada vez 🐾</p>
+
+        <div class="impact-cards">
+            <div class="card">
+                <div class="card-icon">🐶</div>
+                <h3>Resgate</h3>
+                <p>Projeto de Resgate: Resgate de animais em situação de risco nas ruas.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🏠</div>
+                <h3>Adoção</h3>
+                <p>Projeto de Adoção: Facilitação do processo de adoção responsável.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">💉</div>
+                <h3>Castração</h3>
+                <p> Projeto de Castração: Campanhas de castração para controle populacional.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">📚</div>
+                <h3>Educação</h3>
+                <p>Projeto Educativo: Programas de conscientização sobre cuidados com os animais.</p>
+                </div>
+            </div>
+    </section>
+
+    <section class="cta">
+        <div class="cta-content">
+            <h2>Junte-se a Nós!</h2>
+            <p>Seja voluntário, faça uma doação ou adote um amigo peludo. Cada ação conta!
+                Faça a Diferença na Vida dos Animais</p>
+            <div class="cta-buttons">
+                <a href="cadastro.html" class="btn-primary">Quero ser um voluntário!</a>
+                <a href="index.html" class="btn-secondary">Fazer uma doação</a>
+            </div>
+                <img src="../img/projeto.jpg" alt="Imagem de projetos" width="300">
         <p>Participe dos nossos projetos e ajude a fazer a diferença na vida desses animais!</p>
         <h3>Como Participar</h3>
-        <p>Você pode contribuir como voluntário, doador ou adotante. Entre em contato conosco para saber mais!</p>
-        <p> Faça seu cadastro e participe.</p>
+        <p>Faça seu cadastro e participe. Você pode contribuir como voluntário, doador ou adotante. Entre em
+            contato conosco para saber
+            mais! </p>
         <p>Juntos, podemos transformar vidas!</p>
+    </div>
     </section>
-</main>
+    
+    <section class="contact">
+        <h2>Fale conosco</h2>
+        <address>
+            <p>Endereço:📍Rua Animalia, 007 Bairro Catoo - São Paulo </p>
+            <p>Telefone:☎️(11)99999-9999</p>
+            <p>Email:📧contato@organizacaoaumiigao.org.br</p>
+        </address>
 
-<footer>
-    <p>&copy; 2025 ONG Aumiigão</p>
-</footer>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 ONG Aumiigão. Todos os direitos reservados.</p>
+        <p>Feito com &#10084;&#65039;</p>
+    </footer>
+
+    <script src="../JS/script.js"></script>
 </body>
 
 </html>

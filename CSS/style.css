@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #aa9797;
+    color: #3d3d3d;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+    color: rgb(250, 255, 253);
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(185, 64, 64, 0.1);
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: opacity 0.3s;
+    font-weight: 500;
+}
+
+nav a:hover,
+nav a.active {
+    opacity: 1;
+    font-weight: bold;
+}
+
+nav a {
+    opacity: 0.8;
+}
+
+.hero {
+    background: linear-gradient(rgba(102, 126, 234, 0.8), rgba(86, 139, 89, 0.8), ) url('../images/hero-bg.jpg') no-repeat center center/cover;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: aqua;
+    margin: 70px
+}
+
+.hero-page {
+    background:  linear-gradient(rgba(102, 126, 234, 0.8), rgba(86, 139, 89, 0.8), );
+    padding: 8rem 4rem 2rem;
+    text-align: center;
+    color: #3d3d3d;
+    margin-top: 70px;
+}
+
+.hero-content,
+.signup-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    animation: fadeInDOWN 1s ease-out;
+}
+
+.hero h1,
+.hero-page h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero p,
+.hero-page p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.cta-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.btn-primary {
+    flex: 1 1 200px;
+    max-width: 250px;
+    padding: 1rem 5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.btn-primary {
+    background: #ff7f50;
+    color: #fad0c4;
+}
+
+.btn-secondary {
+    background: #3d3d3d;
+    color: #ffffff;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary::after,
+.btn-secondary::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: rotate(45deg);
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover::after,
+.btn-secondary:hover::after {
+    top: 100%;
+    left: 100%;
+}
+
+form fieldset {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+form legend {
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+.form group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.sucess-message {
+    display: none;
+    margin-bottom: 1rem;
+    color: #155724;
+    font-weight: bold;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #3d3d3d;
+    margin-top: 2rem;
+    color: #ffffff;
+}
